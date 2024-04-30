@@ -201,6 +201,75 @@ VALUES ('value_to_column1','value_to_column3')
 
  </details>
  
+<details>
+ <summary>What is the NULL is , and what is the format to filter the NULL value</summary>
+     
+- NULL is missing value (can come from human error, information not available, Unknown, other)
+- The format is
 
+```sql
+
+   --Filter NULL
+SELECT column_name1
+FROM table_name
+WHERE column_name1 IS NULL;
+
+--Filter out NULL
+SELECT column_name1
+FROM table_name
+WHERE column_name1 IS NOT NULL;
+```
+
+<details><summary>If we use COUNT(column_name) and COUNT(*), these two will include the NULL or not</summary>
+
+- COUNT(column_name) not include NULL values
+- COUNT(*) will include NULL values
+  
+</details>
+</details>
+
+<details><summary>When to use UPDATE syntax, and what is the format to use this syntax, how different between UPDATE and INSERT INTO syntax</summary>
+
+ - UPDATE has function like itselfs name, use to update some old values in the table with the new one
+
+```sql
+
+--update some values in those specific column
+UPDATE tablename
+SET column_name1 = 'value_to_update_in_column1', column_name2 = 'value_to_update_in_column2'
+WHERE condition;
+
+--update in whole colum with new value
+UPDATE tablename
+SET column_name1 = 'value_to_update_in_column1', column_name2 = 'value_to_update_in_column2'
+
+--values in column1 and column2 will be updated
+```
+- UPDATE is different from INSERT INTO in the way that UPDATE just update the old value with new value, but INSERT INTO uses for add new values as new row of the table
+</details>
+
+
+<details><summary>The meaning of primary key and foreign key</summary>
+TBC
+</details>
+
+
+<details><summary>How many type of JOIN function, what are functions of each one </summary>
+
+**4 types**
+
+- INNER JOIN
+- OUTER JOIN
+- CROSS JOIN
+- SELF JOIN
+
+</details>
+
+
+
+
+<details><summary></summary></details>
+<details><summary></summary></details>
+<details><summary></summary></details>
  
 
