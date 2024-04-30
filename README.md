@@ -46,3 +46,63 @@ my **SQL learning** notes in a Q&A format. Enjoy Reading !
 
    ```
  </details>
+
+
+ <details> <summary> the standard formats to use select for query I) specific column, II)select All column III) return only unique records</summary>
+
+<br>
+
+**I) specific column**
+
+    
+```sql
+    
+    SELECT column_name1, column_name2,…
+    FROM table_name
+    WHERE condition;
+```
+    
+    
+**II) select All column**
+    
+ ```sql
+    SELECT (*)
+    FROM table_name
+    WHERE condition;
+```
+    
+    but if COUNT(*) mean count all rows
+    
+**III) return only unique records**
+    
+```sql
+    SELECT DISTINCT column_name1, column_name2,…
+    FROM table_name
+    WHERE condition;
+```
+</details>
+
+ <details>
+ <summary> For AND operator, which is the practical one  </summary>
+     
+**I)**
+```sql
+SELECT column_name
+FROM table_name
+WHERE condition>20 AND condition <30;
+```
+
+**II)**
+
+```sql
+
+SELECT column_name
+FROM table_name
+WHERE condition>20 AND <30;
+
+```
+
+
+
+
+</details>
