@@ -256,7 +256,7 @@ TBC
 
 <details><summary>How many type of JOIN function, what are functions of each one </summary>
 
-**4 types**
+**more than 4 types: e.g.**
 
 - INNER JOIN
 - OUTER JOIN
@@ -264,12 +264,69 @@ TBC
 - SELF JOIN
 
 </details>
+<details><summary>Concept of INNER JOIN and format of sql code</summary>
+
+**Inner Join**: like the intersection operation in high-school mathematics topic named set
+
+**I)**
+
+```sql
+FROM table_name1 AS t1
+
+```
+
+**II)**
+
+[1]specify the key area that intersect each other
+
+[2]in case that the key intersection field have the same column name on both table, can use this> USING (table_name); [2] in stead of ON [1] syntax 
+
+[3] in case that have multiple joins, specify either table_name1 or table_name2 and can use either [3]+[4] or [5] for the third join
+
+```sql
+INNER JOIN table_name2 AS t2       
+ON t1.column_name_table1 = t2.column_name_table2 --[1] 
+USING (column_name) --[2]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+INNER JOIN table_name1 --[3]
+ON t1.column_name_table1 = t2.column_name_table2 --[4] 
+AND t1.column_name_table1 = t2.column_name_table2 --[5] 
+
+
+```
+
+
+**III)**
+
+- t1.column_name_table1 (in case that the name of this column has on both table, need to specify table name)
+- column_name_table1(in case that the name of this 	column is unique for both table)
+- column_name_table 2 AS result_set_name (If want 	define new column name shown in the result set)
+
+```sql
+
+SELECT t1.column_name_table1, column_name_table 2 AS result_set_name 
+
+```
+
+
+</details>
 
 
 
+<details><summary>Concept of OUTER JOIN and format of sql code</summary>
+
+<details><summary>RIGHT JOIN</summary></details>
+<details><summary>LEFT JOIN</summary></details>
+<details><summary>FULL JOIN</summary></details>
+<details><summary>Example of situation applied with INNER & OUTER JOIN</summary></details>
+
+
+</details>
+
+<details><summary>Concept of CROSS JOIN and format of sql code</summary></details>
+
+<details><summary>Concept of SELF JOIN and format of sql code</summary></details>
 
 <details><summary></summary></details>
 <details><summary></summary></details>
-<details><summary></summary></details>
- 
 
