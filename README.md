@@ -8,7 +8,7 @@ my **SQL learning** notes in a Q&A format. Enjoy Reading !
   <img src="https://github.com/RadchaneepornC/SQL/blob/main/Image/cat.gif" alt="Alt text" width="50%">
 </p>
 
-[ref pic](https://www.google.co.th/url?sa=i&url=https%3A%2F%2Fthirstymag.com%2FGIFs-that-are-so-cute-we-just-can-t-The-Eyeopener-532587.html&psig=AOvVaw3-KjpDLRinppnOMzHjBFp6&ust=1714536022031000&source=images&cd=vfe&opi=89978449&ved=0CAQQjB1qFwoTCIDlmcaG6YUDFQAAAAAdAAAAABBG)
+
 
 
  <details>
