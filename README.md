@@ -1,6 +1,13 @@
 # SQL
 As the learning technique named active recall is one of the most efficient techniques, I apply this technique by jotting down <br>
+
 my **SQL learning** notes in a Q&A format. Enjoy Reading !
+
+
+<p align="center">
+  <img src="https://github.com/RadchaneepornC/SQL/blob/main/Image/cat.gif" alt="Alt text" width="50%">
+</p>
+
 
  <details>
  <summary> SQL is stand for</summary>
