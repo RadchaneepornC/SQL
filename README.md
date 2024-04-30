@@ -103,7 +103,7 @@ WHERE condition>20 AND <30;
 ```
 
 
-<details><summary> The answer is </summary>
+<ul><details><summary> The answer is </summary>
 I) is correct, II) is syntax error
 
 If want to write in the form of II)
@@ -116,7 +116,7 @@ WHERE condition BETWEEN 20 AND 30; --but this is include 20,30
 
 ```
 
-</details>
+</details></ul>
 </details>
 
 
@@ -313,12 +313,40 @@ SELECT t1.column_name_table1, column_name_table 2 AS result_set_name
 
 
 
-<details><summary>Concept of OUTER JOIN and format of sql code</summary>
+<details><summary>Concept of OUTER JOIN and format of sql code</summary><br>
 
-<details><summary>RIGHT JOIN</summary></details>
-<details><summary>LEFT JOIN</summary></details>
-<details><summary>FULL JOIN</summary></details>
-<details><summary>Example of situation applied with INNER & OUTER JOIN</summary></details>
+   <ul><details><summary>RIGHT JOIN</summary>
+    
+- returns all records in the right table (table that identify secondly after RIGHT JOIN syntax), and those records in the left table (table that identify firstly after FROM syntax) that match on the joint field provided (can written as RIGHT OUTER JOIN)
+
+```sql
+
+SELECT id, left_val, right_val
+FROM left_table
+RIGHT JOIN right_table
+ON left_table.id=right_table.id
+
+```
+
+   
+   
+   </details></ul>
+
+
+   
+   <ul><details><summary>LEFT JOIN</summary>
+   
+   
+   </details></ul>
+
+   <ul><details><summary>FULL JOIN</summary>
+   
+   </details></ul>
+   
+   <ul><details><summary>Example of situation applied with INNER & OUTER JOIN</summary>
+   
+   
+   </details></ul>
 
 
 </details>
