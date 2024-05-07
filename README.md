@@ -344,16 +344,45 @@ ON left_table.id=right_table.id
 
    
    <ul><details><summary>LEFT JOIN</summary>
+
+  - return all records in the left table (table that identify firstly after FROM syntax), and those records in the right table (table that identify secondly after LEFT   JOIN   syntax) that match on the joint field provided
+     
+```sql
+
+  SELECT id, left_val, right_val
+  FROM left_table 
+  LEFT JOIN right_table
+  ON left_table.id=right_table.id
+
+```
+
    
    
    </details></ul>
 
    <ul><details><summary>FULL JOIN</summary>
-   
+    combines the left join and right join, return all key area and for the records that do not have in any table(either left or right) the return shown as NULL
+
+  ```sql
+
+    SELECT id, left_val, right_val
+    FROM left_table
+    FULL JOIN right_table
+    ON left_table.id=right_table.id
+
+ ```
+
    </details></ul>
    
    <ul><details><summary>Example of situation applied with INNER & OUTER JOIN</summary>
-   
+
+  - You sell houses and have two tables, listing_prices and price_sold. You want a table with sale prices and listing prices, only if you know both. For this case, choose appropriate type of join
+      > INNER JOIN > notice from the phrase ‘only if you know both’ meaning the same key area
+
+   - You run a pizza delivery service with loyal clients. You want a table of clients and their weekly orders, with nulls if there are no orders, For this case, choose appropriate type of join
+      > LEFT JOIN OR RIGHT JOIN >notice from this phrase ‘with nulls if there are no orders’
+   - You want a report of whether your patients have reached out to you, or you have reached out to them. You are find with nulls for either conditions, For this case, choose appropriate type of join
+      > FULL JOIN is appropriate, notice from, You are find with nulls for either conditions
    
    </details></ul>
 
